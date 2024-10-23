@@ -1,0 +1,397 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: purple;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between; 
+  padding: 10px; 
+  margin: 30px;
+  height: 70px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-left: -10px;
+  margin-top: 10px;
+}
+
+.logo h3 {
+  margin-top:-10px;
+  margin-left:8px;
+  font-size: 12px;
+  color: rgb(199, 49, 49);
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.nav-items .auth-links a {
+  color: white;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.nav-items a:hover {
+  text-decoration: underline;
+  cursor: pointer; 
+  color: rgb(199, 49, 49); 
+}
+
+.nav-items a {
+  color: purple;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 50px;
+  padding: 0 5px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 15px; 
+  margin-left: 50px;
+}
+
+
+.auth-links {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-links > a {
+  margin-right: 10 px; 
+}
+
+.first {
+  color: orange;
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+.second {
+  color: red;
+  text-align: center;
+}
+
+.education {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-left: 400px;
+  margin-right: 200px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding: 20px;
+  max-width: 600px; 
+  position: relative;
+}
+
+.secon{
+  margin: 0;
+}
+
+body,
+.navbar,
+.education,
+.container,
+.third,
+.fourth,
+.button-container,
+.down {
+  position: relative;
+  z-index: 0; 
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: 50px; 
+  margin-right: 0;
+  width: 100%;
+}
+
+.image-container img {
+  width: 860px; 
+  height: auto;
+  position: absolute;
+  top: -335px; 
+  right: -160px; 
+  z-index: 5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.third {
+  background-color: orange;
+  color: purple;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+  width: 355px;
+  height: 70px;
+  margin: 0 auto; 
+}
+
+.fourth {
+  background-color: rgb(199, 49, 49);
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 25px;
+  padding: 10px 20px;
+  width: 350px;
+  height: 50px;
+  margin-top: 50px;
+}
+.fourth:hover {
+  text-decoration: none;
+  background-color:green;
+  cursor: pointer; 
+  color: white 
+}
+
+.read {
+  background-color: orange;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+}
+.enroll {
+  background-color: white;
+  border: none;
+  padding: 10px 20px;
+  color: black;
+  text-align: center;
+}
+.follow {
+  color: white;
+  font-size: 18px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.down {
+  background-color: orange;
+  text-align: center; 
+  margin-top: 50px;
+  width: 100%;
+}
+
+.down a {
+  margin: 0 10px; 
+  color: purple;
+  text-decoration: none; 
+}
+
+.auth-links .signup {
+  background-color: purple;
+  padding: 10px;
+  color: white; 
+  border-radius: 5px; 
+  text-decoration: none; 
+}
+
+.auth-links .login {
+  background-color: orange;
+  padding: 10px;
+  color: white; 
+  border-radius: 5px; 
+  text-decoration: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.button-container .read, 
+.button-container .enroll {
+  margin: 0 10px; 
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* ***************************************************************************************** */
+
+/* Large Desktops (min-width: 1200px) */
+
+@media (min-width: 75em) {
+  .navbar {
+    margin: 2.5rem;
+  }
+
+  .logo img {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+
+  .logo h3 {
+    margin-bottom:0.625rem;
+  }
+
+  .first {
+    font-size: 7.5rem;
+  }
+
+  .education {
+    font-size: 1.125rem;
+  }
+}
+
+/* Tablets (min-width: 768px and max-width: 1199px) */
+@media (max-width: 74.9375em) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    margin: 1.25rem;
+    padding: 0.625rem;
+  }
+
+  .logo {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .logo img {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  .nav-items a {
+    margin: 0.3125rem 0;
+  }
+
+  .first {
+    font-size:  3.75rem;
+  }
+
+  .education {
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+    font-size: 1rem;
+    margin-bottom: 15.625rem;
+  }
+
+  .third, .fourth {
+    width: 90%;
+    margin: 0.625rem auto;
+  }
+
+  .third{
+    margin-top: 8.125rem;
+  }
+
+  .image-container img {
+    width: 37.5rem;
+    top: -12.5rem;
+    right: -3.125rem;
+    margin-top: -5.3125rem; 
+  }
+}
+
+/* Mobile Devices (max-width: 767px) */
+@media (max-width: 47.9375em) {
+  .navbar {
+    flex-direction: column;
+    margin: 0.625rem;
+    padding: 0.3125rem;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-bottom:  0.9375rem;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    font-size: 0.875rem;
+  }
+
+  .nav-items a {
+    margin: 0.1875rem 0;
+    font-size: 0.875rem;
+  }
+
+  .first {
+    font-size:  2.5rem;
+  }
+
+  .education {
+    margin: 0.625rem;
+    font-size: 0.875rem;
+    margin-bottom: 6.25rem;
+  }
+
+  .third, .fourth {
+    width: 100%;
+    margin: 0.3125rem 0;
+    font-size: 0.875rem;
+  }
+.third{
+  margin-top: 5rem;
+}
+
+  .image-container img {
+    width:  18.75rem;
+    top: -9.375rem;
+    right: 0;
+    margin-top: 1.375rem;
+  }
+
+  .button-container .read, 
+  .button-container .enroll {
+    font-size:  0.875rem;
+  }
+}

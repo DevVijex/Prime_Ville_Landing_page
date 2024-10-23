@@ -64,21 +64,6 @@ body {
   padding: 0 5px;
 }
 
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-}
-
-nav ul li {
-  margin-right: 15px; 
-  margin-left: 50px;
-}
-
-
 .auth-links {
   display: flex;
   margin-left: auto;
@@ -95,10 +80,6 @@ nav ul li {
   font-weight: bold;
   margin-top: 100px;
   margin-bottom: 0;
-}
-.second {
-  color: red;
-  text-align: center;
 }
 
 .education {
